@@ -7,5 +7,5 @@ import datetime
 cdef object utc = datetime.timezone.utc
 cdef object epoch = datetime_new(1970, 1, 1, 0, 0, 0, 0, tz=utc)
 
-include "_packer.pyx"
-include "_unpacker.pyx"
+include "_packer.pyi"
+include "_unpacker.pyi"
